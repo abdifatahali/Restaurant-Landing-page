@@ -1,0 +1,383 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+h2{
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+#welcome{
+  display:grid;
+  grid-template-columns: 30.5rem 1fr;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.welcome-menu{
+ position: relative;
+  background: #fff;
+  padding: 5rem;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.logo img{
+  max-width: 10rem;
+}
+
+.menu{
+  margin-bottom: 5rem;
+}
+
+.menu-title{
+  text-transform: uppercase;
+  color: #0971ce;
+  font-weight: 700;
+  font-size: 1.8rem;
+  border-bottom: 0.1rem solid #e2eaef;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.links{
+
+}
+
+li{
+  list-style: none;
+}
+
+li a{
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 1.4rem;
+  display: block;
+  transition: color .3s ease-in-out;
+}
+
+li a:hover{
+  color: red;
+}
+
+.social-icons{
+  display: flex;
+}
+
+.social-icons a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c2c8cc;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.location{
+  position: absolute;
+  bottom: 8rem;
+}
+
+.address{
+  color: #7a8d99;
+}
+.address p{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.phone-number a{
+  color: #0971ce;
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+/**************    Jumbo Section                 ************/
+
+.welcome-jumbo{
+  max-width: calc(100vw - 30.5rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ed4852;
+  background: -moz-radial-gradient(center, ellipse cover, #ed4852 0% #9c1b24 100%);
+  background: -moz-radial-gradient(center, ellipse cover, #ed4852 0% #9c1b24 100%);
+  background: radial-gradient(ellipse at center, #ed4852 0%, #9c1b24 100%);
+  overflow: hidden;
+  padding: 5rem 8rem 0 8rem;
+}
+
+.burger-fries{
+  /* max-width: 100rem; */
+  width: 100%;
+  animation: moveUpandDown 3s linear infinite;
+  position: relative;
+}
+
+h1{
+  font-size: 4rem;
+  font-weight: 900;
+  color: #fff;
+  align-self: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.status{
+  display: inline-block;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  background: #000;
+  border-radius: 0.5rem;
+  align-self: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+@keyframes moveUpandDown{
+  0%, 100%{
+    bottom: 0;
+  }
+  50%{
+    bottom: 5rem;
+  }
+}
+
+
+/**************    Information Section    ************/
+
+#information{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100vh;
+}
+
+.restaurant-image{
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.restaurant-image img{
+  width: 100%;
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.info h2{
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.paragraphs{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 2rem;
+  line-height: 1.7;
+  font-weight: 450;
+  color: #525e66;
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.about-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+span{
+  margin-right: 1rem;
+  font-size: 1.8rem;
+}
+
+.circle-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background: #ed4852;
+  background: -moz-radial-gradient(center, ellipse cover, #ed4852 0% #9c1b24 100%);
+  background: -moz-radial-gradient(center, ellipse cover, #ed4852 0% #9c1b24 100%);
+  background: radial-gradient(ellipse at center, #ed4852 0%, #9c1b24 100%);
+}
+
+.fa-chevron-right{
+  color: #fff;
+}
+
+
+/* food-preview Section Starts Here */
+
+#food-preview{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #f4f8fb;
+  padding: 10rem;
+}
+
+
+#food-preview h2{
+  margin-bottom: 3rem;
+}
+
+.button-rounded{
+  background: #ed4852;
+  color: #fff;
+  display: inline-block;
+  padding: 1.2rem;
+  border-radius: 3rem;
+  margin-bottom: 13rem;
+}
+
+.container{
+  width: 100%;
+  max-width: 140rem;
+  position: relative;
+}
+
+.left-button, 
+.right-button{
+  background: red;
+  color: #fff;
+  height: 4rem;
+  width: 4rem;
+  position: absolute;
+  top: calc(50% - 2.5rem);
+  z-index: 5;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.left-button{
+  left: -2.5rem;
+}
+
+.right-button{
+  right: -2.5rem;
+}
+
+.food-slider{
+  width: 100%;
+  max-width: 140rem;
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.sliding-system{
+  white-space: nowrap;
+  transform: translate3d(-20%, 0, 0);
+}
+
+
+
+.slide{
+  display: inline-block;
+  width: 20%;
+  position: relative;
+  height: 43rem;
+  cursor: pointer;
+  white-space: normal;
+}
+
+.food-image img{
+  width: 95%;
+  max-width: 20.5rem;
+}
+
+.drinks{
+  width: 45%;
+}
+
+.background{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  transition: transform .3s ease-in-out;
+}
+
+.slide:hover .background{
+  background: rgb(245, 156, 46);
+  transform: translate3d(0, -20rem, 0);
+}
+
+.slide:hover .food-title{
+  color: #fff;
+}
+
+.slide:hover .food-description{
+  color: #fff;
+}
+
+
+.content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  padding: 2rem;
+  z-index: 2;
+}
+
+.food-title{
+  font-size: 2rem;
+  color: #ed4852;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  /* transition: all .3s ease-in-out; */
+}
+
+.food-description{
+  font-size: 1.4rem;
+  color: #7a8d99;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 3rem;
+}
