@@ -381,3 +381,58 @@ span{
   line-height: 1.7;
   margin-bottom: 3rem;
 }
+
+@media(max-width: 700px) { /* Screens 700 and below ... and 700 is tablet view*/
+  .welcome-menu{
+    width: 65rem;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+  .welcome-jumbo{
+    display: none;
+  }
+  .menu{
+    margin-top: -3rem;
+  }
+
+  .links{
+    margin-bottom: -8rem;
+  }
+
+  .social-icons{
+    margin-top: 3rem;
+  }
+
+  .location{
+    text-align: center;
+  }
+
+  .address p{
+    margin-top: -13rem;
+  }
+
+  
+
+  #information{
+    grid-template-columns: 100%;
+    margin-top: -13rem;
+  }
+
+  #food-preview h2{
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    margin-top: -5rem;
+  }
+
+  .container{
+    margin-top: -8rem;
+  }
+}
+
+@media(max-width: 500px) { /* Screens 500 and below ... and 500 is mobile view*/
+
+}
+
