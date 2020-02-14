@@ -1,5 +1,5 @@
-*.css linguist-detectable=false  
+*.css linguist-detectable=ture  
 *.java linguist-detectable=false  
-*.js linguist-detectable=true  
+*.js linguist-detectable=false  
 *.html linguist-detectable=false  
 *.xml linguist-detectable=false 
