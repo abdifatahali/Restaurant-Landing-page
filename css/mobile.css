@@ -1,0 +1,241 @@
+@media(max-width: 700px) { /* Screens 700 and below ... and 700 is tablet view*/
+  
+  #welcome{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .welcome-menu{
+    padding: 0 5rem;
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  
+  .logo img{
+    max-width: 7rem;
+  }
+  
+  .menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  
+  .menu-title{
+    padding-right: 3rem;
+    border-right: 0.1rem solid #0971ce;
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+  
+  .links {
+    display: flex;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  li a{
+    font-size: 1.4rem;
+    padding-right: 3rem;
+  }
+
+  .first{
+    padding-left: 3rem;
+  }
+  
+  .social-icons{
+    display: none;
+  }
+
+  .location{
+    display: none;
+  }
+  /**************    Jumbo Section                 ************/
+
+.welcome-jumbo{
+  min-height: 90vh;
+  max-width: 100vw;
+  padding: 10rem 8rem 0 8rem;
+}
+
+.burger-fries{
+  margin-top: 10rem;
+  width: 50rem;
+  display: flex;
+  align-items: center;
+}
+
+
+
+#information{
+  grid-template-columns: 100%;
+}
+
+.paragraphs {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+}
+
+.paragraphs p:nth-child(1){
+  margin-bottom: 2rem;
+}
+
+.info{
+  padding-bottom: 4rem;
+}
+
+/* food-preview Section Starts Here */
+
+#food-preview{
+  display: none;
+}
+
+#food-preview2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #f4f8fb;
+  padding: 2rem 5rem;
+}
+
+#food-preview2 h2{
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.button-rounded{
+  margin-bottom: 5rem;
+}
+
+.container2{
+  
+}
+
+.right-button,
+.left-button,
+.background {
+  display: none;
+}
+
+.sliding-system2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+}
+
+.food-slider2{
+  
+}
+
+.slide2{
+}
+
+.slide:hover{
+  display: none;
+}
+
+.food-title{
+  margin-bottom: 1rem;
+}
+
+.drinks{
+  margin-left: 8rem;
+}
+
+
+}
+
+@media(max-width: 500px) { /* Screens 500 and below ... and 500 is mobile view*/
+
+  .welcome-menu{
+    padding: 0 2rem;
+  }
+  .menu-title{
+    text-transform: uppercase;
+    color: #0971ce;
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding-right: 2rem;
+    border-right: 0.1rem solid #0971ce;
+  }
+  
+  .links {
+    display: flex;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  li a{
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+    padding-right: 1rem;
+  }
+
+  .first{
+    padding-left: 2rem;
+  }
+
+  .burger-fries{
+    margin-top: 10rem;
+    width: 35rem;
+  }
+
+  .paragraphs{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .info{
+    padding: 0 5rem;
+  }
+
+  .info h2{
+    font-size: 2rem;
+  }
+
+  .paragraphs p:nth-child(1){
+    margin-bottom: 0.2rem;
+  }
+
+  #food-preview2{
+    margin-top: 2rem;
+  }
+
+  #food-preview2 h2{
+    margin-bottom: 1.5rem;
+    font-size: 1.7rem;
+  }
+
+  .sliding-system2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  .drinks{
+    width: 10rem;
+    margin-left: 4rem;
+  }
+
+}
